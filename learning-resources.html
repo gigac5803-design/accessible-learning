@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources | Accessible Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header id="top">
+        <div class="logo">
+            <h2>Accessible Learning</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="understanding-dyslexia.html">Dyslexia</a>
+            <a href="accessible-learning.html">Learning</a>
+            <a href="digital-support.html">Digital Support</a>
+            <a href="learning-resources.html" aria-current="page">Resources</a>
+            <a href="ai-assistant.html">AI Assistant</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div>
+                <h1>Learning Resources</h1>
+                <p>
+                    Find useful materials and tools that can make studying
+                    easier, more comfortable and more accessible.
+                </p>
+            </div>
+
+            <!-- Add an image of books or study materials here -->
+        </section>
+
+        <section class="content-section">
+            <h2>Explore Different Resources</h2>
+            <p>
+                Every student learns differently. These types of resources
+                can help you understand information and remember it better.
+            </p>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>Reading Materials</h3>
+                    <p>
+                        Use short texts, clear explanations and books with
+                        readable fonts to make reading more comfortable.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Audio and Video</h3>
+                    <p>
+                        Listen to explanations or watch educational videos
+                        when reading a long text feels difficult.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Digital Tools</h3>
+                    <p>
+                        Try text-to-speech, digital notes and other tools
+                        that can support your learning.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Study Guides</h3>
+                    <p>
+                        Use summaries, checklists and step-by-step guides
+                        to organize information.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>How to Choose a Resource</h2>
+
+            <div class="info-block">
+                <h3>1. Think about your goal</h3>
+                <p>
+                    Decide what you need to learn or what task you want
+                    to complete.
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3>2. Choose a suitable format</h3>
+                <p>
+                    Some students prefer reading, while others learn better
+                    through audio, video or practical examples.
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3>3. Check if it is useful</h3>
+                <p>
+                    A good resource should be understandable, relevant
+                    and suitable for your current level.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>My Learning Resources</h2>
+            <p>
+                Create your own collection of useful websites, books,
+                videos and study materials.
+            </p>
+
+            <form id="resource-form">
+                <div class="form-group">
+                    <label for="resource-title">Resource title</label>
+                    <input
+                        type="text"
+                        id="resource-title"
+                        name="title"
+                        placeholder="Enter the resource name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="resource-category">Category</label>
+                    <select id="resource-category" name="category" required>
+                        <option value="">Choose a category</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Audio and Video">Audio and Video</option>
+                        <option value="Digital Tools">Digital Tools</option>
+                        <option value="Study Guides">Study Guides</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resource-format">Format</label>
+                    <select id="resource-format" name="format" required>
+                        <option value="">Choose a format</option>
+                        <option value="Website">Website</option>
+                        <option value="Book">Book</option>
+                        <option value="Video">Video</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Document">Document</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resource-rating">Rating</label>
+                    <select id="resource-rating" name="rating" required>
+                        <option value="">Rate this resource</option>
+                        <option value="1">1 - Not very useful</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - Average</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Very useful</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resource-description">Description</label>
+                    <textarea
+                        id="resource-description"
+                        name="description"
+                        placeholder="Write a short description"
+                        rows="4"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Add Resource</button>
+            </form>
+
+            <div class="resource-controls">
+                <div class="form-group">
+                    <label for="resource-search">Search resources</label>
+                    <input
+                        type="search"
+                        id="resource-search"
+                        placeholder="Search by title..."
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="resource-filter">Filter by category</label>
+                    <select id="resource-filter">
+                        <option value="All">All categories</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Audio and Video">Audio and Video</option>
+                        <option value="Digital Tools">Digital Tools</option>
+                        <option value="Study Guides">Study Guides</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="resource-list">
+                <p>Your saved resources will appear here.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Keep Learning</h2>
+            <p>
+                The best resource is one that helps you understand the topic
+                and makes learning a little easier.
+            </p>
+            <a href="ai-assistant.html" class="button">
+                Explore the AI Assistant
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Accessible Learning Project &copy; 2026</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+</body>
+</html>

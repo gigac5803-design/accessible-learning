@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Accessible Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header id="top">
+        <div class="logo">
+            <h2>Accessible Learning</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="understanding-dyslexia.html">Dyslexia</a>
+            <a href="accessible-learning.html">Learning</a>
+            <a href="digital-support.html">Digital Support</a>
+            <a href="learning-resources.html">Resources</a>
+            <a href="ai-assistant.html">AI Assistant</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h1>Welcome Back</h1>
+            <p>Log in to continue your learning journey.</p>
+
+            <form id="login-form" novalidate>
+                <div class="form-group">
+                    <label for="login-email">Email address</label>
+                    <input type="email" id="login-email" required>
+                    <small id="login-email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                    <small id="login-password-error"></small>
+                </div>
+
+                <button type="submit">Log In</button>
+                <p id="login-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <p>Don't have an account? <a href="register.html">Create one</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Accessible Learning Project &copy; 2026</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+</body>
+</html>

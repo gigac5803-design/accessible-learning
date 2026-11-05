@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant | Accessible Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header id="top">
+        <div class="logo">
+            <h2>Accessible Learning</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="understanding-dyslexia.html">Dyslexia</a>
+            <a href="accessible-learning.html">Learning</a>
+            <a href="digital-support.html">Digital Support</a>
+            <a href="learning-resources.html">Resources</a>
+            <a href="ai-assistant.html" aria-current="page">AI Assistant</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div>
+                <h1>AI Learning Assistant</h1>
+                <p>
+                    Make difficult information easier to understand.
+                    Use this tool to simplify text and find the main ideas.
+                </p>
+            </div>
+
+            <!-- Add an illustration of an AI learning assistant here -->
+        </section>
+
+        <section class="content-section">
+            <h2>How Can AI Help?</h2>
+            <p>
+                Some texts contain difficult words, long sentences or too
+                much information. An AI assistant can help explain them
+                in a clearer way.
+            </p>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>Simplify Text</h3>
+                    <p>
+                        Rewrite complicated sentences using simpler words
+                        and shorter explanations.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Find Main Ideas</h3>
+                    <p>
+                        Get a short summary of the most important points
+                        in a text.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Explain Words</h3>
+                    <p>
+                        Understand unfamiliar words with clear definitions
+                        and examples.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>AI Text Simplifier</h2>
+            <p>
+                Paste a text below, choose what you need, and the assistant
+                will help make the information easier to follow.
+            </p>
+
+            <form id="ai-form">
+                <div class="form-group">
+                    <label for="ai-text">Your text</label>
+                    <textarea
+                        id="ai-text"
+                        name="text"
+                        rows="8"
+                        placeholder="Paste or type a text here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="ai-task">What would you like to do?</label>
+                    <select id="ai-task" name="task" required>
+                        <option value="simplify">Simplify the text</option>
+                        <option value="summary">Summarize the main ideas</option>
+                        <option value="explain">Explain difficult words</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ai-level">Choose a language level</label>
+                    <select id="ai-level" name="level">
+                        <option value="very-simple">Very simple English</option>
+                        <option value="simple" selected>Simple English</option>
+                        <option value="intermediate">Intermediate English</option>
+                    </select>
+                </div>
+
+                <button type="submit">Make Text Easier</button>
+            </form>
+
+            <div id="ai-status" role="status" aria-live="polite"></div>
+
+            <div id="ai-result" class="info-block">
+                <h3>Result</h3>
+                <p>Your simplified text or explanation will appear here.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Example</h2>
+
+            <div class="info-block">
+                <h3>Original text</h3>
+                <p>
+                    Plants require sufficient sunlight and water to
+                    maintain healthy growth.
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3>Simplified text</h3>
+                <p>
+                    Plants need enough sunlight and water to grow well.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Remember</h2>
+            <p>
+                AI can make learning easier, but it can also make mistakes.
+                Always check important facts and compare the answer with
+                your learning materials.
+            </p>
+
+            <a href="learning-resources.html" class="button">
+                Explore Learning Resources
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Accessible Learning Project &copy; 2026</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+</body>
+</html>

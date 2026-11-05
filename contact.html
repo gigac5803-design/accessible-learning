@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Accessible Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header id="top">
+        <div class="logo">
+            <h2>Accessible Learning</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="understanding-dyslexia.html">Dyslexia</a>
+            <a href="accessible-learning.html">Learning</a>
+            <a href="digital-support.html">Digital Support</a>
+            <a href="learning-resources.html">Resources</a>
+            <a href="ai-assistant.html">AI Assistant</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div>
+                <h1>Contact Us</h1>
+                <p>
+                    Your feedback can help us make learning more accessible.
+                    Share your ideas, questions or suggestions.
+                </p>
+            </div>
+
+            <!-- Add an image related to communication here -->
+        </section>
+
+        <section class="content-section">
+            <h2>We Would Like to Hear From You</h2>
+            <p>
+                If you have an idea for improving this website, found a
+                problem, or want to suggest a useful learning resource,
+                you can use the form below.
+            </p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Your name</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email address</label>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-topic">What is your message about?</label>
+                    <select id="contact-topic" name="topic" required>
+                        <option value="">Choose a topic</option>
+                        <option value="Feedback">Website feedback</option>
+                        <option value="Suggestion">Suggestion</option>
+                        <option value="Question">Question</option>
+                        <option value="Resource">Learning resource</option>
+                        <option value="Problem">Report a problem</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Your message</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="contact-status" role="status" aria-live="polite"></div>
+        </section>
+
+        <section class="content-section">
+            <h2>Our Goal</h2>
+            <p>
+                Accessible Learning aims to make educational information
+                easier to understand and use. We want to support students
+                with different learning needs through clear content,
+                useful digital tools and practical resources.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>Explore More</h2>
+            <div class="card-container">
+                <article class="card">
+                    <h3>Understanding Dyslexia</h3>
+                    <p>Learn about dyslexia and common learning difficulties.</p>
+                    <a href="understanding-dyslexia.html">Learn more</a>
+                </article>
+
+                <article class="card">
+                    <h3>Digital Support</h3>
+                    <p>Discover tools that can make studying easier.</p>
+                    <a href="digital-support.html">Explore tools</a>
+                </article>
+
+                <article class="card">
+                    <h3>Learning Resources</h3>
+                    <p>Find and organize helpful educational materials.</p>
+                    <a href="learning-resources.html">View resources</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Accessible Learning Project &copy; 2026</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+</body>
+</html>

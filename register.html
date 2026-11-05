@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Accessible Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header id="top">
+        <div class="logo">
+            <h2>Accessible Learning</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="understanding-dyslexia.html">Dyslexia</a>
+            <a href="accessible-learning.html">Learning</a>
+            <a href="digital-support.html">Digital Support</a>
+            <a href="learning-resources.html">Resources</a>
+            <a href="ai-assistant.html">AI Assistant</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h1>Create an Account</h1>
+            <p>Register to personalize your learning experience.</p>
+
+            <form id="register-form" novalidate>
+                <div class="form-group">
+                    <label for="register-name">Full name</label>
+                    <input type="text" id="register-name" required>
+                    <small id="name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-email">Email address</label>
+                    <input type="email" id="register-email" required>
+                    <small id="email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-birthday">Date of birth</label>
+                    <input type="date" id="register-birthday" required>
+                    <small id="birthday-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                    <small>Password must contain at least 8 characters, an uppercase letter, a lowercase letter and a number.</small>
+                    <small id="password-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-confirm">Confirm password</label>
+                    <input type="password" id="register-confirm" required>
+                    <small id="confirm-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="learning-preference">Preferred learning format</label>
+                    <select id="learning-preference" required>
+                        <option value="">Choose a format</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Video">Video</option>
+                        <option value="Practical">Practical activities</option>
+                    </select>
+                    <small id="preference-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="register-consent" style="width: auto;">
+                        I agree to the use of my information for this demonstration.
+                    </label>
+                    <small id="consent-error"></small>
+                </div>
+
+                <button type="submit">Create Account</button>
+                <p id="register-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Accessible Learning Project &copy; 2026</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+</body>
+</html>
